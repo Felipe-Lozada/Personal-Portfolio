@@ -25,6 +25,7 @@
     --third-color: #8f2232;
     --fourth-color:#950740;
     --fith-color: #c3073f;
+    --active-color: #d5f667;
     /* Font */ 
     --body-font: 'Poppins', sans-serif;
     --h1-font-size: 1.5rem;
@@ -44,6 +45,7 @@
 
 /* Responsive stuff */ 
 
+
 @media screen and (min-width: 768px){
     :root{
         --h1-font-size: 2.25rem;
@@ -54,6 +56,7 @@
         --smaller-font-size: .813rem;
     }
 }
+
 
 /* Base */ 
 
@@ -86,6 +89,7 @@ h3{
 }
 
 ul {
+    width: 100%;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -160,7 +164,7 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: var(--second-color);
+    background: var(--second-color);
     transition: .5s;
 }
 
@@ -174,11 +178,18 @@ img {
 }
 
 .nav__item {
+    width: 100%;
     margin-bottom: var(--mb-4);
 }
 
+.nav__item:hover{
+    border-bottom: 1px solid var(--text-color);
+    cursor: pointer;
+    transition: .3s;
+}
+
 .nav__link {
-    font-size: 1rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: var(--font-bold);
     color: var(--text-color);
@@ -189,4 +200,13 @@ img {
     color: var(--second-color);
     font-size: 1.3rem;
     cursor: pointer;
+}
+
+/* Show Menu */
+.show{
+    left: 0;
+}
+
+.active{
+    color: var(--active-color);
 }
