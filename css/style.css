@@ -18,6 +18,12 @@
     --font-semi-bold: 600;
     --font-bold: 700;
     /*Colors*/
+    --text-color: #fff;
+    --first-color: #1a1a1d;
+    --second-color: #4e4e50;
+    --third-color: #8f2232;
+    --fourth-color:#950740;
+    --fith-color: #c3073f;
     /*Font*/
     --body-font: 'Poppins', sans-serif;
     --h1-font-size: 1.5rem;
@@ -33,4 +39,38 @@
     --mb-4: 2rem;
     --mb-5: 2.5rem;
     --z-fixed: 100;
+}
+
+/*Responsive stuff*/
+
+@media screen and (min-width: 768px){
+    :root{
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/*Base*/
+*,::before, ::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: var(--header-heigh) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    background: var(--first-color);
+    color: var(--text-color);
+    line-height: 1.6;
 }
