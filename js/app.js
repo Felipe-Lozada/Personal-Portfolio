@@ -24,20 +24,21 @@ navLink.forEach(l => l.addEventListener('click', linkAction));
 
 const sections = document.querySelectorAll('section[id]');
 
-window.addEventListener('scroll', scrollActive);
-
-function scrollActive (){
+const scrollActive = (ev) => { 
     const scrollY = window.pageYOffset;
     sections.forEach( current => {
+        console.log(current);
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 50;
         const sectionId = current.getAttribute('id');
 
         if (scrollY> sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelector ('.nav__item a [href*=' + sectionId + ']'). classList.add ('active')
+            document.querySelector('.nav__menu a [href*=' + sectionId + ']').classList.add('active')
         } else {
-            document.querySelector ('.nav__item a [href*=' + sectionId + ']'). classList.remove ('active')
+            document.querySelector('.nav__menu a [href*=' + sectionId + ']').classList.remove('active')
         }
 
     });
 }
+
+window.addEventListener('scroll', scrollActive);
