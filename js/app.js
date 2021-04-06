@@ -42,3 +42,13 @@ const scrollActive = (ev) => {
 }
 
 window.addEventListener('scroll', scrollActive);
+
+/* Cursor Dot*/
+const sigueRaton = document.getElementById('sigueRaton').style;
+
+const seguir = () => {
+  sigueRaton.top = parseInt(window.event.pageY + 5) + "px";
+  sigueRaton.left = parseInt(window.event.pageX + 5) + "px";
+}
+
+window.addEventListener('mouseover', seguir);
