@@ -428,3 +428,68 @@ img{
 .skills__angular, .skills__ionic, .skills__node{
     width: 60%;
 }
+
+/* Container */
+
+.education__container{
+    row-gap: 2rem;
+}
+
+.education__content{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+}
+
+.education__year, .education__race{
+    font-size: var(--h3-font-size);
+    margin-bottom: .25rem;
+}
+
+.education__university, .education__speciality{
+    display: block;
+    font-size: var(--smaller-font-size);
+}
+
+.education__year, .education__university{
+    text-align: right;
+}
+
+.education__time{
+    padding: 0 1rem;
+    justify-self: center;
+}
+
+.education__rounder{
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--fifth-color-light);
+}
+
+.education__rounder::before{
+    content: '';
+    position: absolute;
+    transform: translate(-4px, -4px);
+    -webkit-transform: translate(-4px, -4px);
+    -moz-transform: translate(-4px, -4px);
+    -ms-transform: translate(-4px, -4px);
+    -o-transform: translate(-4px, -4px);
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--fifth-color-light);
+    border-radius: 50%;
+}
+
+.education__line{
+    display: block;
+    height: 90%;
+    width: 2px;
+    background: var(--fifth-color-light);
+    transform: translate(5px, -4px);
+    -webkit-transform: translate(5px, -4px);
+    -moz-transform: translate(5px, -4px);
+    -ms-transform: translate(5px, -4px);
+    -o-transform: translate(5px, -4px);
+}
