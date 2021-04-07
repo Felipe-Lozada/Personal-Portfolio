@@ -135,9 +135,10 @@ img{
 
 .section-subtitle{ 
     display: block;
-    font-size: var(--small-font-size);
-    color: var(--third-color);
+    font-size: var(--normal-font-size);
+    color: var(--fifth-color);
     text-align: center;
+    font-weight: bold;
 }
 
  /* Layout */ 
@@ -351,6 +352,7 @@ img{
     width: 150px;
     border-radius: .5rem;
     margin: 0 auto;
+    margin-bottom: var(--mb-2);
 }
 
 .about__information {
@@ -361,6 +363,7 @@ img{
     font-size: var(--h3-font-size);
     color: var(--fifth-color);
     margin-bottom:var(--mb-2);
+    margin-left: var(--mb-2);
 }
 
 .about__information-data{
@@ -378,4 +381,50 @@ img{
 
 .about__information-subtitle{
     display: block;
+    font-weight: var(--font-semi-bold);
+}
+
+.about__information-subtitle{
+    font-size: var(--small-font-size);
+}
+
+/* Skills */
+
+.skills__container{
+    row-gap: 2rem;
+}
+
+.skills__subtitle{
+    font-size: var(--h3-font-size);
+    color: var(--fifth-color);
+    margin-bottom: var(--mb-2);
+}
+
+.skills__data{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 var(--mb-2);
+    margin-bottom: var(--mb-4);
+}
+
+.skills__name{
+     text-transform: uppercase;
+}
+
+.skills__bar{
+    position: absolute;
+    bottom: -.75rem;
+    height: .25rem;
+    background: var(--fifth-color-light);
+}
+
+.skills__html, .skills__sql{
+    width: 80%;
+}
+.skills__js, .skills__php{
+    width: 70%;
+}
+.skills__angular, .skills__ionic, .skills__node{
+    width: 60%;
 }
