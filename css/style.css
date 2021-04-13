@@ -25,11 +25,9 @@
     --text-color: #fff;
     --first-color: #1a1a1d;
     --second-color: #4e4e50;
-    --third-color: #8f2232;
-    --fourth-color:#950740;
     --fifth-color: #c3073f;
     --fifth-color-light: #fc5069;
-    --active-color: #d5f667;
+    --fifth-color-dark: #8b001a;
     /* Font */ 
     --body-font: 'Poppins', sans-serif;
     --h1-font-size: 1.5rem;
@@ -144,7 +142,7 @@ img{
 
 .section-title{
     font-size: var(--h1-font-size);
-    color: var(--fourth-color);
+    color: var(--fifth-color-light);
     margin-bottom: var(--mb-3);
     text-align: center;
 }
@@ -279,13 +277,13 @@ img{
 
 .home__title{
     font-size: var(--h1-font-size);
-    color: var(--fourth-color);
+    color: var(--fifth-color);
     font-weight: var(--font-semi-bold);
 }
 
 .home__profession{
         font-size: var(--small-font-size);
-        color: var(--fifth-color);
+        color: var(--fifth-color-ligth);
         margin-bottom: var(--mb-5);
 }
 
@@ -296,7 +294,7 @@ img{
 .home__social-link{
     display:inline-flex;
     background: var(--first-color);
-    color: var(--fourth-color);
+    color: var(--fifth-color);
     font-size: 2rem;
     border-radius: 50%;
     padding: .40em;
@@ -305,7 +303,7 @@ img{
 }
 
 .home__social-link:hover{
-    background: var(--fourth-color);
+    background: var(--fifth-color);
     color: var(--text-color);
     transform: scale(1.5);
     -moz-transform: scale(1.5);
@@ -322,12 +320,12 @@ img{
 
 .button{ 
     display: inline-block;
-    background: var(--fourth-color);
+    background: var(--fifth-color);
     color: var(--text-color);
     padding: 1rem 2rem;
     font-weight: var(--font-semi-bold);
     border-radius: .5rem;
-    border: 1px solid var(--fourth-color);
+    border: 1px solid var(--fifth-color);
     transition: .5s ease-in;
 }
 
@@ -391,7 +389,7 @@ img{
 
 .about__information-icon{
     font-size: 1.5rem;
-    color: var(--fourth-color);
+    color: var(--fifth-color-light);
     margin-right: var(--mb-4);
 }
 
@@ -532,7 +530,7 @@ img{
 
 .services__title{
     font-size: 1.25rem;
-    color:var(--fourth-color);
+    color:var(--fifth-color);
     margin-bottom: var(--mb-1);
 }
 
@@ -541,7 +539,7 @@ img{
 }
 
 .services__content:hover{
-    background: var(--fourth-color);
+    background: var(--fifth-color);
     border: 2px solid var(--first-color);
 }
 
@@ -561,8 +559,10 @@ img{
     font-weight: bold;
 }
 
+/* Projects in mind */
+
 .project{
-    background: var(--second-color);
+    background: var(--first-color);
     padding: 0;
 }
 
@@ -574,8 +574,8 @@ img{
     text-align: center;
 }
 
-.project__title, .project__description{
-    color: var(--text-color)
+.project__title{
+    color: var(--fifth-color)
 }
 
 .project__description{
@@ -586,3 +586,5 @@ img{
     width: 220px;
     justify-self: center;
 }
+
+/* Works */
