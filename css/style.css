@@ -116,14 +116,26 @@ img{
 /* Calss */ 
 
 .sigueRaton{
-    display: none;;
-    width: 30px;
-    height: 30px;
-    border:2px solid var(--fifth-color-light);
+    display: none;
+    width: 25px;
+    height: 25px;
+    background:var(--fifth-color-light);
     border-radius: 50%;
     position: absolute;
     transition: .1s;
     z-index: 200;
+}
+
+.sigueRaton::before{
+    content: '';
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--fifth-color-light);
+    position: absolute;
+    border-radius: 50%;
+    vertical-align: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .section{
@@ -547,4 +559,30 @@ img{
 .services__content:hover .services__description{
     color: var(--text-color);
     font-weight: bold;
+}
+
+.project{
+    background: var(--second-color);
+    padding: 0;
+}
+
+.project__container{
+    row-gap: 2rem;
+}
+
+.project__data{
+    text-align: center;
+}
+
+.project__title, .project__description{
+    color: var(--text-color)
+}
+
+.project__description{
+    margin-bottom: var(--mb-4);
+}
+
+.project__img{
+    width: 220px;
+    justify-self: center;
 }
